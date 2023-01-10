@@ -31,8 +31,8 @@ Do NOT modify this file if you dont know what youre doing.
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
 @import url(https://mr-miner1.github.io/Better-Badges/src/badges.css);
 @import url(https://discord-theme-addons.github.io/modern-channel-indicators/src/support/compiled.css);
-/* Warning to Remove Minimum Size */
-@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css) (width: 940px);
+/* Warning to Remove Minimum Size 
+@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css) (width: 940px);*/
 /* Source */
 @import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 940px);
 /* If your theme has custom settings icons, delete or comment this line */
