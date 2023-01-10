@@ -83,7 +83,7 @@ body, #app-mount, #app-mount .app-3xd6d0, #app-mount .app-2CXKsg, #app-mount .co
 
     --settings-min-height: 450px;
     --settings-max-height: 100%;
-    --settings-min-width: 960px;
+    --settings-min-width: 120px;
     --settings-max-width: 960px;
 
     --radius: 12px;
@@ -173,7 +173,7 @@ body, #app-mount, #app-mount .app-3xd6d0, #app-mount .app-2CXKsg, #app-mount .co
     --enable-if-using-favorites-experiment: 0; /* boolean */
     --guildlist-collapse: 0; /* boolean */
     /* HorizontalServerList */
-    --HSL-server-icon-size: 50px;  /* Size of the server icons | DEFAULT: 40px */
+    --HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
     --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
     --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
     /* Server Image Shape (modifiable!) (change all of the numbers to modify shape) */
