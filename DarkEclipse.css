@@ -14,34 +14,34 @@ Do NOT modify this file if you dont know what youre doing.
   * If you wanna use the regular Discord Emojis, delete lines 32
   * If you wanna change any (nonmain) colors or modify things go to lines 
  */
- @import url(https://adaelynxiv.github.io/RoundedDark/src/roundeddark.css);
- @import url(https://patrykbielanin.github.io/discord-cyberpunk2077-theme/base.css);
+ @import "https://adaelynxiv.github.io/RoundedDark/src/roundeddark.css";
+ @import "https://patrykbielanin.github.io/discord-cyberpunk2077-theme/base.css";
 /**
  * Delete this @import if you want the regular discord icons (Docs coming soon (maybe))
 */
-@import url(https://satanadesigns.github.io/external-files/iconChange.css);
+@import "https://satanadesigns.github.io/external-files/iconChange.css";
 /** 
  * Replaces Emojis
  * Delete this @import if you want the regular discord emojis (Docs coming soon (maybe))
 */
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+@import "https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css";
 
 /* Addons*/ 
-@import url(https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css);
-@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
-@import url(https://mr-miner1.github.io/Better-Badges/src/badges.css);
-@import url(https://discord-theme-addons.github.io/modern-channel-indicators/src/support/compiled.css);
+@import "https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css";
+@import "https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css";
+@import "https://mr-miner1.github.io/Better-Badges/src/badges.css";
+@import "https://discord-theme-addons.github.io/modern-channel-indicators/src/support/compiled.css";
 /* Warning to Remove Minimum Size 
-@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css) (width: 940px);*/
+@import "https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/RemoveMinimumSize.css" (width: 940px);*/
 /* Source */
-@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css) (max-width: 940px);
+@import "https://maendisease.github.io/BetterDiscordStuff/Themes/Float/Float.css" (max-width: 940px);
 /* If your theme has custom settings icons, delete or comment this line */
-@import url(https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css) (max-width: 940px);
+@import "https://maendisease.github.io/BetterDiscordStuff/Themes/Float/addon/SettingsIcons.css" (max-width: 940px);
 /* HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
 /* Top */
-@import url(https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css);
+@import "https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css";
 /* Bottom */
-/* @import url("https://discordstyles.github.io/Addons/bottomhsl.css"); */
+/* @import "https://discordstyles.github.io/Addons/bottomhsl.css"; */
 
 /* Theme base transparenties */
 body, #app-mount, #app-mount .app-3xd6d0, #app-mount .app-2CXKsg, #app-mount .container-2RRFHK.fixClipping-3GOd_d, #app-mount .wrapper-3AZUiP, #app-mount .bg-1QIAus, #app-mount .layer-86YKbF, #app-mount .container-1NXEtd, #app-mount .privateChannels-oVe7HL, #app-mount .panels-3wFtMD > *, #app-mount .chat-2ZfjoI, #app-mount .container-3XgAHv, #app-mount .wrapper-3HVHpV, #app-mount .noChat-sb1z07, #app-mount .members-3WRCEx, #app-mount .members-3WRCEx > div, #app-mount .container-2cd8Mz, #app-mount .applicationStore-2nk7Lo, #app-mount .pageWrapper-2PwDoS, #app-mount .scrollerBase-_bVAAt, #app-mount .standardSidebarView-E9Pc3j, #app-mount .contentRegion-3HkfJJ {
