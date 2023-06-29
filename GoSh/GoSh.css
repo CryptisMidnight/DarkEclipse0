@@ -25,12 +25,11 @@ Author  = CryptisMidnight
 @import "https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css"; /* Horizontal Server List*/
 /*@import "https://discordstyles.github.io/Addons/bottomhsl.css"; /* Bottom Horizontal Server List. Simply remove the "/" to enable it (Only works when Import above is enabled) */
 
-
- /*                              
- ===============================
- |          Variable           |
- ===============================
- */
+/*                              
+===============================
+|          Variable           |
+===============================
+*/
 
 :root {
   /* Colors */
@@ -58,13 +57,11 @@ Author  = CryptisMidnight
   --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
   --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
 
-
     
   --Titlebar: flex; /* flex = ON, none = OFF */
   --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');  /* Background image*/
   --Home-Image-Icon: url('https://cdn.discordapp.com/attachments/274379803161919519/1121962733676535808/zombie_discord.webp'); /* the DM discord Icon */
 
-     
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
   --rs-medium-spacing: 1px; /* Gap between avatar and status for User popout | MUST end in px */
@@ -82,8 +79,23 @@ Author  = CryptisMidnight
   --rs-phone-color: var(--clr11); /* Colour of the ring and phone icon when a user is on their phone |  */  
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 
-    
+  --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+  --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+  --server-container: calc(var(--server-size) + 20px);
+  --server-direction: var(--HSL-server-direction, column);
+  --server-alignment: var(--HSL-server-alignment, flex-start);
 
+}
+
+@keyframes clrc {
+  25% {background-color: var(--clr04);}
+  50% {background-color: var(--clr03);}
+  75% {background-color: var(--clr06);}
+}
+@keyframes bdrc {
+  25% {border-color: var(--clr04);}
+  50% {border-color: var(--clr03);}
+  75% {border-color: var(--clr06);}
 }
 
  /*Theme base transparenties */
@@ -163,33 +175,22 @@ body,
   --Emoji-Menu: var(--clr18);
 }
 
-/*.theme-light {
-  "Create a server" popup | I will never support light theme 
-
-}*/
-
 /*Settings Menu 
 .item-5ApiZt#user-settings-cog-My_Account::before {
 	--icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='my_account' d='M2,4.222l0,15.556c0,1.222 0.989,2.222 2.222,2.222l15.556,-0c1.222,-0 2.222,-1 2.222,-2.222l-0,-15.556c-0,-1.222 -1,-2.222 -2.222,-2.222l-15.556,-0c-1.233,-0 -2.222,1 -2.222,2.222Zm13.333,4.445c0,1.844 -1.489,3.333 -3.333,3.333c-1.844,-0 -3.333,-1.489 -3.333,-3.333c-0,-1.845 1.489,-3.334 3.333,-3.334c1.844,0 3.333,1.489 3.333,3.334Zm-10,8.889c0,-2.223 4.445,-3.445 6.667,-3.445c2.222,0 6.667,1.222 6.667,3.445l-0,1.111l-13.334,-0l0,-1.111Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 ;}*/
 
 /*                              
- ===============================
- |          TitleBar           |
- ===============================
- */
+===============================
+|          TitleBar           |
+===============================
+*/
 
 .withFrame-haYltI {
   height: 20px !important;
   background-color: var(--clr02);
   animation: clrc 20s infinite;
   background-image: var(--grd01);
-}
-
-@keyframes clrc {
-  25% {background-color: var(--clr04);}
-  50% {background-color: var(--clr03);}
-  75% {background-color: var(--clr06);}
 }
 
 [armcord-platform="linux"] .window-title, [armcord-platform="win32"] .window-title {
@@ -231,10 +232,10 @@ body,
 }
 
 /*                              
- ===============================
- |          MemberLS           |
- ===============================
- */
+===============================
+|          MemberLS           |
+===============================
+*/
 
 #vc-membercount {
   padding-bottom: 0.5em;
@@ -264,12 +265,53 @@ body,
 }
 
 /*                              
- ===============================
- |          SideBar            |
- ===============================
- */
+===============================
+|          SideBar            |
+===============================
+*/
 
- .sidebar-1tnWFu {
+.sidebar-1tnWFu {
   border-right: 1px solid transparent;
   border-image: var(--grd02) 1;
- }
+}
+
+/*                              
+===============================
+|           Center            |
+===============================
+*/
+
+.form-3gdLxP {
+  padding-left: 0.55em;
+  padding-right: 0.7em;
+}
+
+.base-2jDfDU .channelTextArea-220_Gz, .base-2jDfDU .channelTextArea-1FufC0, .base-2jDfDU .scrollableContainer-15eg7h {
+  background-color: var(--clr19);
+  border: 1px solid var(--clr02);
+  animation: bdrc 20s infinite;
+  border-radius: 10px;
+}
+button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.colorBrand-2M3O3N.grow-2T4nbg {
+  position: relative;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.webkit-QgSAqd .buttons-uaqb-5 {
+  margin-right: -0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/*                              
+===============================
+|          ServerLS           |
+===============================
+*/
+
+.svg-2ifYOU, .wrapperSimple-2SFl9K, .wrapper-3Un6-K {
+  border-radius: 10% 35% 50%;
+}
