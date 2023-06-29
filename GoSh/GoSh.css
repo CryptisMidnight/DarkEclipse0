@@ -1,0 +1,263 @@
+/*
+Name    = GoSh Night
+Author  = CryptisMidnight
+*/
+
+ /*                              
+ ===============================
+ |          Imports            |
+ ===============================
+ */
+
+/* Main Import | --> Don't delete this <-- */
+@import "https://misspent.github.io/Darkened/BetterDiscord/main.css";
+
+/* Add a "/" on the left side of the first Quotation mark to cancel out the import */
+@import "https://crearts-community.github.io/Mention-Links/theme.css"; /* Mention Links */
+@import "https://lyght1337.github.io/DarknessCodeBlocks/css/CodeBlocks.css"; /* Codeblocks */
+@import "https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css"; /* Scrollbars */
+@import "https://misspent.github.io/Darkened/BetterDiscord/ChannelIcons.css"; /* Channel Icons */
+@import "https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css"; /* Radial Status */
+/*@import "https://misspent.github.io/Darkened/BetterDiscord/DarkenedCompact.css"; /* Compact Import | Collapses friends list */
+@import "https://misspent.github.io/Darkened/BetterDiscord/SeparatedChatBar.css"; /* SeparatedChatBar */
+@import "https://misspent.github.io/Darkened/BetterDiscord/ContextIconColours.css"; /* ContextIconsColours */
+@import "https://maendisease.github.io/BetterDiscordStuff/css/wellThisIsAwkwardSoTryThis.css"; /* Better Crashes - Disease | Indicating which plugins are currently causing commits. */
+@import "https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css"; /* Horizontal Server List*/
+/*@import "https://discordstyles.github.io/Addons/bottomhsl.css"; /* Bottom Horizontal Server List. Simply remove the "/" to enable it (Only works when Import above is enabled) */
+
+
+ /*                              
+ ===============================
+ |          Variable           |
+ ===============================
+ */
+
+:root {
+  /* Colors */
+  --clr01: #252525c0;
+  --clr02: #f52040c0;
+  --clr03: #91f779c0;
+  --clr04: #fba753c0;
+  --clr05: #2040f5c0;
+  --clr06: #a13ef7c0;
+  --clr07: #00bfffc0;
+  --clr08: #b5b5b5c0;
+  --clr09: #3a3a3ac0;
+  --clr10: #f87eaac0;
+  --clr11: #00e687c0;
+  --clr12: #f6e13cc0;
+  --clr13: #8172ffc0;
+  --clr14: #ff3cebc0;
+  --clr15: #0cdaffc0;
+  --clr16: #e0e0e0c0;
+  --clr17: #a5a5a5c0;
+  --clr18: #050505c0;
+  --clr19: #101010c0;
+  --grd01: linear-gradient(90deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%), linear-gradient(180deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%);
+  --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
+  --grd03: radial-gradient(ellipse 50% 15px, transparent, var(--clr18));
+
+
+    
+  --Titlebar: flex; /* flex = ON, none = OFF */
+  --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');
+  --Home-Image-Icon: url('https://cdn.discordapp.com/attachments/274379803161919519/1121962733676535808/zombie_discord.webp');
+
+     
+  /* Radial Status (modifiable!) */
+  --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 1px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 1px; /* Gap between avatar and status for User profiles | MUST end in px */
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
+  --rs-avatar-shape: 35%; /* 50% for round - 0% for square */  
+  --rs-online-color: var(--clr03); /* Colour for online status */
+  --rs-idle-color: var(--clr12); /* Colour for idle status */
+  --rs-dnd-color: var(--clr02); /* Colour for dnd status */
+  --rs-offline-color: var(--clr09); /* Colour for offline status */
+  --rs-streaming-color: var(--clr06); /* Colour for streaming status */
+  --rs-invisible-color: var(--clr08); /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--clr11); /* Colour of the ring and phone icon when a user is on their phone |  */  
+  --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    
+
+}
+
+ /*Theme base transparenties */
+body, 
+#app-mount, 
+#app-mount .app-3xd6d0, 
+#app-mount .app-2CXKsg, 
+#app-mount .container-2RRFHK.fixClipping-3GOd_d, 
+#app-mount .wrapper-3AZUiP, 
+#app-mount .bg-1QIAus, 
+#app-mount .layer-86YKbF, 
+#app-mount .container-1NXEtd, 
+#app-mount .privateChannels-oVe7HL, 
+#app-mount .panels-3wFtMD > *, 
+#app-mount .chat-2ZfjoI, 
+#app-mount .container-3XgAHv, 
+#app-mount .wrapper-3HVHpV, 
+#app-mount .noChat-sb1z07, 
+#app-mount .members-3WRCEx, 
+#app-mount .members-3WRCEx > div, 
+#app-mount .container-2cd8Mz, 
+#app-mount .applicationStore-2nk7Lo, 
+#app-mount .pageWrapper-2PwDoS, 
+#app-mount .scrollerBase-_bVAAt, 
+#app-mount .standardSidebarView-E9Pc3j, 
+#app-mount .contentRegion-3HkfJJ {
+	background-color: transparent;
+}
+#app-mount .children-3xh0VB:after {
+	display: none;
+}
+#app-mount .wrapper-1_HaEi {
+	background-color: var(--clr18);
+}
+#app-mount .container-ZMc96U.themed-Hp1KC_, 
+#app-mount .sidebarRegion-1VBisG, 
+#app-mount .sidebar-1tnWFu, 
+#app-mount .panels-3wFtMD, 
+#app-mount .membersWrap-3NUR2t, 
+#app-mount .nowPlayingColumn-1eCBCN {
+	background-color: var(--clr18);
+}
+.appMount-2yBXZl {
+  background: var(--bgd-img) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+ .theme-dark {
+  --background-tertiary: var(--clr18);
+  --background-secondary: #090909;
+  --background-secondary-alt: rgb(11, 11, 11);
+  --background-primary: var(--clr18);
+  --background-mobile-primary: #23283d;
+  --background-mobile-secondary: #1e2233;
+  --channeltextarea-background: rgb(12, 12, 12); /* Main window text bar + reply bar background */
+  --background-accent: var(--clr02);
+  --divider-color: var(--clr02);
+  --background-message-hover: transparent;
+  --background-modifier-hover: rgba(40, 40, 40, 0.16);
+  --background-modifier-active: rgba(40, 40, 40, 0.24);
+  --background-modifier-selected: rgba(40, 40, 40, 0.32);
+  --deprecated-card-bg: rgba(33, 33, 33, 0.6);
+  --background-floating: var(--clr18);
+  --deprecated-quickswitcher-input-background: var(--clr17);
+  --elevation-low: none;
+  --scrollbar-auto-thumb: #101010;
+  --scrollbar-auto-track: #181818;
+  --scrollbar-thin-thumb: #141414;
+  --activity-card-background: #0f0f0f;
+  --border-color: rgb(13, 13, 13);
+  --popout-title: #060606;
+  --popout-background-main: #030303;
+  --jump-newmessage-bars-buttons: rgb(30, 30, 30);
+  --jump-newmessage-bars: rgb(20, 20, 20);
+  --Emoji-Menu: rgb(06, 06, 06);
+}
+
+/*.theme-light {
+  "Create a server" popup | I will never support light theme 
+
+}*/
+
+/*Settings Menu 
+.item-5ApiZt#user-settings-cog-My_Account::before {
+	--icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='my_account' d='M2,4.222l0,15.556c0,1.222 0.989,2.222 2.222,2.222l15.556,-0c1.222,-0 2.222,-1 2.222,-2.222l-0,-15.556c-0,-1.222 -1,-2.222 -2.222,-2.222l-15.556,-0c-1.233,-0 -2.222,1 -2.222,2.222Zm13.333,4.445c0,1.844 -1.489,3.333 -3.333,3.333c-1.844,-0 -3.333,-1.489 -3.333,-3.333c-0,-1.845 1.489,-3.334 3.333,-3.334c1.844,0 3.333,1.489 3.333,3.334Zm-10,8.889c0,-2.223 4.445,-3.445 6.667,-3.445c2.222,0 6.667,1.222 6.667,3.445l-0,1.111l-13.334,-0l0,-1.111Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+;}*/
+
+/*                              
+ ===============================
+ |          TitleBar           |
+ ===============================
+ */
+
+.withFrame-haYltI {
+  height: 20px !important;
+  background-color: var(--clr02);
+  animation: clrc 20s infinite;
+  background-image: var(--grd01);
+}
+
+@keyframes clrc {
+  25% {background-color: var(--clr04);}
+  50% {background-color: var(--clr03);}
+  75% {background-color: var(--clr06);}
+}
+
+[armcord-platform="linux"] .window-title, [armcord-platform="win32"] .window-title {
+  content: var(--wordmark-svg);
+  height: 10px;
+  margin-left: initial;
+  transform: translate(10px, 2.5px);
+  float: left;
+  line-height: 20px;
+  padding: 0;
+}
+
+[armcord-platform="win32"] .titlebar #window-controls-container {
+  float: right;
+  width: 150px;
+  height: 100%;
+  line-height: 15px;
+  -webkit-app-region: no-drag;
+}
+
+.titlebar {
+  display: block;
+  top: 0.25%;
+  left: 0;
+  right: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  zoom: 1;
+  box-sizing: border-box;
+  width: 100%;
+  clear: both;
+  height: 20px;
+  line-height: 15px;
+  -webkit-app-region: drag;
+  user-select: none;
+  -webkit-user-select: none;
+  position: fixed;
+  z-index: 99999;
+}
+
+/*                              
+ ===============================
+ |          MemberLS           |
+ ===============================
+ */
+
+#vc-membercount {
+  padding-bottom: 0.5em;
+  z-index: 103;
+  position: inherit;
+  top: -0.75em;
+}
+.members-3WRCEx {
+  margin-top: 25px;
+}
+:root .membersWrap-3NUR2t::before {
+  content: "Member list";
+  margin-top: 0.25em;
+  height: 0.75em;
+  font-size: 18px;
+  font-weight: bolder;
+  color: var(--clr02);
+}
+:root .membersWrap-3NUR2t::after {
+  height: 1.5em;
+  background-color: var(--clr01);
+  border-radius: 0 0 var(--rs-avatar-shape) var(--rs-avatar-shape);
+}
+.container-2o3qEW {
+  border-left: 1px solid transparent;
+  border-image: var(--grd02) 1;
+}
+
