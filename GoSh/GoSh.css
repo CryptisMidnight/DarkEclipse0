@@ -56,7 +56,7 @@ Author  = CryptisMidnight
   --clr19: #101010c0;
   --grd01: linear-gradient(90deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%), linear-gradient(180deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%);
   --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
-  --grd03: linear-gradient(0deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
+  --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
 
 
     
@@ -81,6 +81,7 @@ Author  = CryptisMidnight
   --rs-invisible-color: var(--clr08); /* Colour for invisible status - Note: this will only show for your own invisibility */
   --rs-phone-color: var(--clr11); /* Colour of the ring and phone icon when a user is on their phone |  */  
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
     
 
 }
@@ -254,7 +255,7 @@ body,
 }
 :root .membersWrap-3NUR2t::after {
   height: 1.5em;
-  background-color: var(--clr01);
+  background-image: var(--grd03);
   border-radius: 0 0 var(--rs-avatar-shape) var(--rs-avatar-shape);
 }
 .container-2o3qEW {
@@ -262,3 +263,13 @@ body,
   border-image: var(--grd02) 1;
 }
 
+/*                              
+ ===============================
+ |          SideBar            |
+ ===============================
+ */
+
+ .sidebar-1tnWFu {
+  border-right: 1px solid transparent;
+  border-image: var(--grd02) 1;
+ }
