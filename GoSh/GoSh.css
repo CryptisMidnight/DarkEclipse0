@@ -34,6 +34,7 @@ Author  = CryptisMidnight
 
 :root {
   /* Colors */
+  /* With 75% 0pacity */
   --clr01: #252525c0;
   --clr02: #f52040c0;
   --clr03: #91f779c0;
@@ -55,13 +56,13 @@ Author  = CryptisMidnight
   --clr19: #101010c0;
   --grd01: linear-gradient(90deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%), linear-gradient(180deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%);
   --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
-  --grd03: radial-gradient(ellipse 50% 15px, transparent, var(--clr18));
+  --grd03: linear-gradient(0deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
 
 
     
   --Titlebar: flex; /* flex = ON, none = OFF */
-  --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');
-  --Home-Image-Icon: url('https://cdn.discordapp.com/attachments/274379803161919519/1121962733676535808/zombie_discord.webp');
+  --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');  /* Background image*/
+  --Home-Image-Icon: url('https://cdn.discordapp.com/attachments/274379803161919519/1121962733676535808/zombie_discord.webp'); /* the DM discord Icon */
 
      
   /* Radial Status (modifiable!) */
@@ -131,34 +132,34 @@ body,
   background-size: cover !important;
 }
 
- .theme-dark {
+.theme-dark {
   --background-tertiary: var(--clr18);
-  --background-secondary: #090909;
-  --background-secondary-alt: rgb(11, 11, 11);
+  --background-secondary: var(--clr19);
+  --background-secondary-alt: var(--clr19);
   --background-primary: var(--clr18);
-  --background-mobile-primary: #23283d;
-  --background-mobile-secondary: #1e2233;
-  --channeltextarea-background: rgb(12, 12, 12); /* Main window text bar + reply bar background */
+  --background-mobile-primary: var(--clr01);
+  --background-mobile-secondary: var(--clr01);
+  --channeltextarea-background: var(--clr19); /* Main window text bar + reply bar background */
   --background-accent: var(--clr02);
   --divider-color: var(--clr02);
   --background-message-hover: transparent;
-  --background-modifier-hover: rgba(40, 40, 40, 0.16);
-  --background-modifier-active: rgba(40, 40, 40, 0.24);
-  --background-modifier-selected: rgba(40, 40, 40, 0.32);
-  --deprecated-card-bg: rgba(33, 33, 33, 0.6);
+  --background-modifier-hover: var(--clr01);
+  --background-modifier-active: var(--clr01);
+  --background-modifier-selected: var(--clr01);
+  --deprecated-card-bg: var(--clr01);
   --background-floating: var(--clr18);
   --deprecated-quickswitcher-input-background: var(--clr17);
   --elevation-low: none;
-  --scrollbar-auto-thumb: #101010;
-  --scrollbar-auto-track: #181818;
-  --scrollbar-thin-thumb: #141414;
-  --activity-card-background: #0f0f0f;
-  --border-color: rgb(13, 13, 13);
-  --popout-title: #060606;
-  --popout-background-main: #030303;
-  --jump-newmessage-bars-buttons: rgb(30, 30, 30);
-  --jump-newmessage-bars: rgb(20, 20, 20);
-  --Emoji-Menu: rgb(06, 06, 06);
+  --scrollbar-auto-thumb: var(--clr19);
+  --scrollbar-auto-track: var(--clr19);
+  --scrollbar-thin-thumb: var(--clr19);
+  --activity-card-background: var(--clr19);
+  --border-color: var(--clr19);
+  --popout-title: var(--clr18);
+  --popout-background-main: var(--clr18);
+  --jump-newmessage-bars-buttons: var(--clr19);
+  --jump-newmessage-bars: var(--clr19);
+  --Emoji-Menu: var(--clr18);
 }
 
 /*.theme-light {
