@@ -87,6 +87,11 @@ Author  = CryptisMidnight
 
 }
 
+@keyframes radc {
+  25% {border-radius: 10% 35% 50% 35%;}
+  50% {border-radius: 35% 10% 35% 50%;}
+  75% {border-radius: 50% 35% 10% 35%;}
+}
 @keyframes clrc {
   25% {background-color: var(--clr04);}
   50% {background-color: var(--clr03);}
@@ -313,5 +318,6 @@ button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.co
 */
 
 .svg-2ifYOU, .wrapperSimple-2SFl9K, .wrapper-3Un6-K {
-  border-radius: 10% 35% 50%;
+  border-radius: 35% 50% 35% 10%;
+  animation: radc 20s infinite;
 }
