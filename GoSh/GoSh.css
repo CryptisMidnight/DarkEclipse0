@@ -85,12 +85,25 @@ Author  = CryptisMidnight
   --server-direction: var(--HSL-server-direction, column);
   --server-alignment: var(--HSL-server-alignment, flex-start);
 
+  --settingsicons-armthemes: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themes.svg');
+	--settingsicons-armcord: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.svg');
+  --settingsicons-vencord: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.svg');
+  --settingsicons-venplugs: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/plugins.svg');
+	--settingsicons-venthemes: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themes.svg');
+  --settingsicons-vencloud: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Cloud-upload_%28CoreUI_Icons_v1.0.0%29.svg');
+	--settingsicons-venbackup: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/library.svg');
+  --settingsicons-actpriv: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/activityprivacy.svg');
+	
 }
 
 @keyframes radc {
+  12% {border-radius: 20%;}
   25% {border-radius: 10% 35% 50% 35%;}
+  37% {border-radius: 20%;}
   50% {border-radius: 35% 10% 35% 50%;}
+  62% {border-radius: 20%;}
   75% {border-radius: 50% 35% 10% 35%;}
+  87% {border-radius: 20%;}
 }
 @keyframes clrc {
   25% {background-color: var(--clr04);}
@@ -179,11 +192,56 @@ body,
   --jump-newmessage-bars: var(--clr19);
   --Emoji-Menu: var(--clr18);
 }
-
-/*Settings Menu 
-.item-5ApiZt#user-settings-cog-My_Account::before {
-	--icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='my_account' d='M2,4.222l0,15.556c0,1.222 0.989,2.222 2.222,2.222l15.556,-0c1.222,-0 2.222,-1 2.222,-2.222l-0,-15.556c-0,-1.222 -1,-2.222 -2.222,-2.222l-15.556,-0c-1.233,-0 -2.222,1 -2.222,2.222Zm13.333,4.445c0,1.844 -1.489,3.333 -3.333,3.333c-1.844,-0 -3.333,-1.489 -3.333,-3.333c-0,-1.845 1.489,-3.334 3.333,-3.334c1.844,0 3.333,1.489 3.333,3.334Zm-10,8.889c0,-2.223 4.445,-3.445 6.667,-3.445c2.222,0 6.667,1.222 6.667,3.445l-0,1.111l-13.334,-0l0,-1.111Z' style='fill-rule:nonzero;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
-;}*/
+/* settings Icon fixes for Armcord */
+.themed-qqoYp3.item-2GWPIy#themes::before {
+  -webkit-mask: var(--settingsicons-armthemes) center/contain no-repeat;
+  mask: var(--settingsicons-armthemes) center/contain no-repeat;
+}
+.themed-qqoYp3.item-2GWPIy#armcord::before {
+  -webkit-mask: var(--settingsicons-armcord) center/contain no-repeat;
+  mask: var(--settingsicons-armcord) center/contain no-repeat;
+}
+.sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i])
+ .item-2GWPIy:nth-child(31)::before, 
+ .platform-win .sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i]) 
+ .item-2GWPIy:nth-child(32)::before, 
+ #app-mount .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy[aria-controls="overlay-tab" i]::before {
+  -webkit-mask: var(--settingsicons-vencord) center/contain no-repeat;
+  mask: var(--settingsicons-vencord) center/contain no-repeat;
+  color: var(--clr02);
+ }
+ .sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i]) 
+ .item-2GWPIy:nth-child(32)::before,
+ #app-mount .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy[aria-controls="plugins-tab" i]::before {
+  -webkit-mask: var(--settingsicons-venplugs) center/contain no-repeat;
+  mask: var(--settingsicons-venplugs) center/contain no-repeat;
+   color: var(--clr04);
+ }
+ .sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i]) 
+ .item-2GWPIy:nth-child(33)::before,
+ #app-mount .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy[aria-controls="plugins-tab" i]::before {
+  -webkit-mask: var(--settingsicons-venthemes) center/contain no-repeat;
+  mask: var(--settingsicons-venthemes) center/contain no-repeat;
+ }
+ .sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i]) 
+ .item-2GWPIy:nth-child(34)::before,
+ #app-mount .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy[aria-controls="plugins-tab" i]::before {
+  -webkit-mask: var(--settingsicons-vencloud) center/contain no-repeat;
+  mask: var(--settingsicons-vencloud) center/contain no-repeat;
+ }
+ .sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i]) 
+ .item-2GWPIy:nth-child(35)::before,
+ #app-mount .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy[aria-controls="plugins-tab" i]::before {
+  -webkit-mask: var(--settingsicons-venbackup) center/contain no-repeat;
+  mask: var(--settingsicons-venbackup) center/contain no-repeat;
+ }
+ .sidebar-nqHbhN .side-1lrxIh:is([aria-label="Brugerindstillinger" i], [aria-label="Benutzereinstellungen" i], [aria-label="User Settings" i], [aria-label="Ajustes de usuario" i], [aria-label="Paramètres utilisateur" i], [aria-label="Korisničke postavke" i], [aria-label="Impostazioni utente" i], [aria-label="Naudotojo Nustatymai" i], [aria-label="Felhasználói beállítások" i], [aria-label="Gebruikersinstellingen" i], [aria-label="Brukerinnstillinger" i], [aria-label="Ustawienia użytkownika" i], [aria-label="Configurações de Usuário" i], [aria-label="Setări utilizator" i], [aria-label="Käyttäjäasetukset" i], [aria-label="Användarinställningar" i], [aria-label="Cài đặt người dùng" i], [aria-label="Kullanıcı Ayarları" i], [aria-label="Uživatelská nastavení" i], [aria-label="Ρυθμίσεις χρήστη" i], [aria-label="Потребителски настройки" i], [aria-label="Настройки пользователя" i], [aria-label="Користувацькі налаштування" i], [aria-label="यूज़र सेटिंग" i], [aria-label="ตั้งค่าผู้ใช้" i], [aria-label="用户设置" i], [aria-label="ユーザー設定" i], [aria-label="使用者設定" i], [aria-label="사용자 설정" i]) 
+ .item-2GWPIy:nth-child(38)::before,
+ #app-mount .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy[aria-controls="plugins-tab" i]::before {
+  -webkit-mask: var(--settingsicons-actpriv) center/contain no-repeat;
+  mask: var(--settingsicons-actpriv) center/contain no-repeat;
+   color: var(--clr13);
+ }
 
 /*                              
 ===============================
@@ -279,6 +337,24 @@ body,
   border-right: 1px solid transparent;
   border-image: var(--grd02) 1;
 }
+.scroller-1ox3I2 {
+border-right: 0px solid transparent;
+background-color: var(--clr18);
+}
+/*.draggable-S2aEx4 {
+   background: #3c3c3cc0; User Color 
+}
+.content-1gYQeQ {
+  border-left: 2px solid #b95353;
+  border-radius: 10%;
+}*/
+.containerDefault-3TQ5YN, 
+.containerDragAfter-1J_-1V, 
+.containerDragBefore-ei4h1m, 
+.containerUserOver-3woq86 {
+  background-color: var(--clr06);
+  background-image: var(--grd03);
+}
 
 /*                              
 ===============================
@@ -319,5 +395,5 @@ button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.co
 
 .svg-2ifYOU, .wrapperSimple-2SFl9K, .wrapper-3Un6-K {
   border-radius: 35% 50% 35% 10%;
-  animation: radc 20s infinite;
+  animation: radc 6s infinite reverse;
 }
