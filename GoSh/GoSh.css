@@ -53,13 +53,16 @@ Author  = CryptisMidnight
   --clr17: #a5a5a5c0;
   --clr18: #050505c0;
   --clr19: #101010c0;
+  --clr20: #050505;
   --grd01: linear-gradient(90deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%), linear-gradient(180deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%);
   --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
   --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
+  --grd04: linear-gradient(90deg, var(--clr01) 15%, var(--clr03), var(--clr07), transparent 85%);
+  
 
     
   --Titlebar: flex; /* flex = ON, none = OFF */
-  --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');  /* Background image*/
+  --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');  /* Background image also try https://cdn.wallpapersafari.com/29/54/DScYIg.jpg*/
   --Home-Image-Icon: url('https://cdn.discordapp.com/attachments/274379803161919519/1121962733676535808/zombie_discord.webp'); /* the DM discord Icon */
 
   /* Radial Status (modifiable!) */
@@ -313,7 +316,7 @@ body,
   content: "Member list";
   margin-top: 0.25em;
   height: 0.75em;
-  font-size: 18px;
+  font-size: 1.15em;
   font-weight: bolder;
   color: var(--clr02);
 }
@@ -325,6 +328,14 @@ body,
 .container-2o3qEW {
   border-left: 1px solid transparent;
   border-image: var(--grd02) 1;
+}
+
+.membersGroup-2eiWxl {
+  background-color: var(--clr18);
+  background-image: var(--grd03);
+  border-top: 1px solid;
+  /* border-bottom: 1px solid; */
+  border-image: var(--grd04) 1;
 }
 
 /*                              
@@ -339,21 +350,24 @@ body,
 }
 .scroller-1ox3I2 {
 border-right: 0px solid transparent;
-background-color: var(--clr18);
+background-color: color-mix(in srgb, var(--clr18) 85%, transparent);
 }
-/*.draggable-S2aEx4 {
-   background: #3c3c3cc0; User Color 
-}
-.content-1gYQeQ {
-  border-left: 2px solid #b95353;
-  border-radius: 10%;
-}*/
 .containerDefault-3TQ5YN, 
 .containerDragAfter-1J_-1V, 
 .containerDragBefore-ei4h1m, 
 .containerUserOver-3woq86 {
-  background-color: var(--clr06);
+  background-color: var(--clr18);
   background-image: var(--grd03);
+  border-top: 1px solid;
+  /* border-bottom: 1px solid; */
+  border-image: var(--grd04) 1;
+}
+.primaryInfo-2ocY3v {
+  color: var(--clr02);
+}
+.name-3Uvkvr{
+  font-size: 1.15em;
+  font-weight: bolder;
 }
 
 /*                              
