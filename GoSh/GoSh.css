@@ -108,7 +108,7 @@ Author  = CryptisMidnight
   75% {border-radius: 50% 35% 10% 35%;}
   87% {border-radius: 20%;}
 }
-@keyframes clrc {
+@keyframes bkcc {
   25% {background-color: var(--clr04);}
   50% {background-color: var(--clr03);}
   75% {background-color: var(--clr06);}
@@ -117,6 +117,14 @@ Author  = CryptisMidnight
   25% {border-color: var(--clr04);}
   50% {border-color: var(--clr03);}
   75% {border-color: var(--clr06);}
+}
+
+@keyframes clrc {
+  16% { color: var(--clr02);}
+  33% { color: var(--clr04);}
+  50% { color: var(--clr03);}
+  66% { color: var(--clr07);}
+  83% { color: var(--clr05);}
 }
 
  /*Theme base transparenties */
@@ -195,6 +203,7 @@ body,
   --jump-newmessage-bars: var(--clr19);
   --Emoji-Menu: var(--clr18);
 }
+
 /* settings Icon fixes for Armcord */
 .themed-qqoYp3.item-2GWPIy#themes::before {
   -webkit-mask: var(--settingsicons-armthemes) center/contain no-repeat;
@@ -255,7 +264,7 @@ body,
 .withFrame-haYltI {
   height: 20px !important;
   background-color: var(--clr02);
-  animation: clrc 20s infinite;
+  animation: bkcc 20s infinite;
   background-image: var(--grd01);
 }
 
@@ -337,6 +346,9 @@ body,
   /* border-bottom: 1px solid; */
   border-image: var(--grd04) 1;
 }
+.membersWrap-3NUR2t {
+  height: 100%;
+}
 
 /*                              
 ===============================
@@ -350,7 +362,7 @@ body,
 }
 .scroller-1ox3I2 {
 border-right: 0px solid transparent;
-background-color: color-mix(in srgb, var(--clr18) 85%, transparent);
+background-color: var(--clr18);
 }
 .containerDefault-3TQ5YN, 
 .containerDragAfter-1J_-1V, 
@@ -369,6 +381,23 @@ background-color: color-mix(in srgb, var(--clr18) 85%, transparent);
   font-size: 1.15em;
   font-weight: bolder;
 }
+.sidebar-1tnWFu .wrapper-NhbLHG .unread-36eUEm {
+  background-color: var(--clr02);
+}
+.sidebar-1tnWFu .wrapper-NhbLHG .unread-36eUEm + .content-1gYQeQ {
+  background: var(--clr18);
+}
+.modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg, 
+.modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV {
+  color: var(--clr06);
+  animation: clrc 12s infinite
+
+}
+/*
+.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg 
+.modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, 
+.modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV,  
+.notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV */
 
 /*                              
 ===============================
@@ -410,4 +439,9 @@ button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.co
 .svg-2ifYOU, .wrapperSimple-2SFl9K, .wrapper-3Un6-K {
   border-radius: 35% 50% 35% 10%;
   animation: radc 6s infinite reverse;
+}
+.baseShapeRound-3epLEv, .actionButton-3-B2x- {
+  
+  border-radius: 35% 50% 35% 10%;
+  animation: radc 6s infinite;
 }
