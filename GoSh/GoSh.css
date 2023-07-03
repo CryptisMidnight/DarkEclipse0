@@ -63,7 +63,7 @@ Author  = CryptisMidnight
     
   --Titlebar: flex; /* flex = ON, none = OFF */
   --bgd-img: url('https://getwallpapers.com/wallpaper/full/2/c/5/62467.jpg');  /* Background image also try https://cdn.wallpapersafari.com/29/54/DScYIg.jpg*/
-  --Home-Image-Icon: url('https://cdn.discordapp.com/attachments/274379803161919519/1121962733676535808/zombie_discord.webp'); /* the DM discord Icon */
+  --Home-Image-Icon: url('https://raw.githubusercontent.com/CryptisMidnight/GoSh-Night/main/images/webp/zombie_discord.webp'); /* the DM discord Icon */
 
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
