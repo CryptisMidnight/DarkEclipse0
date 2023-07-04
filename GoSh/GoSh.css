@@ -72,7 +72,8 @@ Author  = CryptisMidnight
   --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
   --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
   --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
-  --rs-avatar-shape: 35%; /* 50% for round - 0% for square */  
+  --rs-avatar-shape: 35%; /* 50% for round - 0% for square */ 
+  --avatar-radius: 35%; 
   --rs-online-color: var(--clr03); /* Colour for online status */
   --rs-idle-color: var(--clr12); /* Colour for idle status */
   --rs-dnd-color: var(--clr02); /* Colour for dnd status */
@@ -82,6 +83,7 @@ Author  = CryptisMidnight
   --rs-phone-color: var(--clr11); /* Colour of the ring and phone icon when a user is on their phone |  */  
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 
+  --server-radius: 1.1em;
   --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
   --server-container: calc(var(--server-size) + 20px);
@@ -158,14 +160,16 @@ body,
 }
 #app-mount .wrapper-1_HaEi {
 	background-color: var(--clr18);
-}
-#app-mount .container-ZMc96U.themed-Hp1KC_, 
+} 
 #app-mount .sidebarRegion-1VBisG, 
 #app-mount .sidebar-1tnWFu, 
 #app-mount .panels-3wFtMD, 
 #app-mount .membersWrap-3NUR2t, 
 #app-mount .nowPlayingColumn-1eCBCN {
 	background-color: var(--clr18);
+}
+#app-mount .container-ZMc96U.themed-Hp1KC_ {
+  background-color: color-mix(in srgb, var(--clr20) 93.5%, transparent);
 }
 .appMount-2yBXZl {
   background: var(--bgd-img) !important;
@@ -391,13 +395,32 @@ background-color: var(--clr18);
 .modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV {
   color: var(--clr06);
   animation: clrc 12s infinite
-
 }
+.sidebar-1tnWFu .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ {
+  border-color: var(--clr14);
+  background-color: var(--clr19);
+}
+.sidebar-1tnWFu .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ svg {
+  color: var(--clr14);
+}
+.sidebar-1tnWFu .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ .channelName-3KPsGw {
+  color: var(--clr14);
+}
+
+.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg, 
+.modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV {
+  color: var(--clr06);
+}
+
 /*
-.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg 
 .modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, 
-.modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV,  
+
 .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV */
+
+.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX {
+  background-color: var(--clr07) !important;
+  border-radius: 0.5em !important;
+}
 
 /*                              
 ===============================
