@@ -54,18 +54,18 @@ Author  = CryptisMidnight
   --clr18: #050505c0;
   --clr19: #101010c0;
   --clr20: #050505;
+  /* main Images */
+  --bgd-img: url('https://i.pinimg.com/originals/88/d7/9e/88d79ecf8069585d6e1b95a5805098df.jpg');  /* Background Image also try https://cdn.wallpapersafari.com/29/54/DScYIg.jpg*/
+  --Home-Image-Icon: url('https://raw.githubusercontent.com/CryptisMidnight/GoSh-Night/main/images/webp/zombie_discord.webp'); /* the DM discord Icon */
+  /* Gradients */
   --grd01: linear-gradient(90deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%), linear-gradient(180deg, var(--clr18) 15%, transparent 50%, var(--clr18) 85%);
   --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
   --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
   --grd04: linear-gradient(90deg, var(--clr01) 15%, var(--clr03), var(--clr07), transparent 85%);
   --grd05: linear-gradient(90deg, var(--clr20) 10%, transparent, var(--clr20) 90%), linear-gradient(0deg, var(--clr18) 10%, transparent 50%, var(--clr18) 90%);
-  
-
-    
-  --Titlebar: flex; /* flex = ON, none = OFF */
-  --bgd-img: url('https://i.pinimg.com/originals/88/d7/9e/88d79ecf8069585d6e1b95a5805098df.jpg');  /* Background image also try https://cdn.wallpapersafari.com/29/54/DScYIg.jpg*/
-  --Home-Image-Icon: url('https://raw.githubusercontent.com/CryptisMidnight/GoSh-Night/main/images/webp/zombie_discord.webp'); /* the DM discord Icon */
+    /* Misc */
   --codeblockbackground: url(https://lyght1337.github.io/DarknessCodeBlocks/Codeblocksvg/code.svg);
+  --Titlebar: flex; /* flex = ON, none = OFF */
 
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
@@ -75,7 +75,7 @@ Author  = CryptisMidnight
   --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
   --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
   --rs-avatar-shape: 35%; /* 50% for round - 0% for square */ 
-  --avatar-radius: 35%; 
+  --avatar-radius: 35%; /* 50% for round - 0% for square */
   --rs-online-color: var(--clr03); /* Colour for online status */
   --rs-idle-color: var(--clr12); /* Colour for idle status */
   --rs-dnd-color: var(--clr02); /* Colour for dnd status */
@@ -84,14 +84,14 @@ Author  = CryptisMidnight
   --rs-invisible-color: var(--clr08); /* Colour for invisible status - Note: this will only show for your own invisibility */
   --rs-phone-color: var(--clr11); /* Colour of the ring and phone icon when a user is on their phone |  */  
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-
+  /* Server List adjustment*/
   --server-radius: 1.1em;
   --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
   --server-container: calc(var(--server-size) + 20px);
   --server-direction: var(--HSL-server-direction, column);
   --server-alignment: var(--HSL-server-alignment, flex-start);
-
+  /* Menu icons in settings*/
   --settingsicons-armthemes: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themes.svg');
 	--settingsicons-armcord: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.svg');
   --settingsicons-vencord: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.svg');
@@ -101,6 +101,36 @@ Author  = CryptisMidnight
 	--settingsicons-venbackup: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/library.svg');
   --settingsicons-actpriv: url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/activityprivacy.svg');
 	
+}
+
+.theme-dark {
+  --background-tertiary: var(--clr18);
+  --background-secondary: var(--clr19);
+  --background-secondary-alt: var(--clr19);
+  --background-primary: var(--clr18);
+  --background-mobile-primary: var(--clr01);
+  --background-mobile-secondary: var(--clr01);
+  --channeltextarea-background: var(--clr19); /* Main window text bar + reply bar background */
+  --background-accent: var(--clr02);
+  --divider-color: var(--clr02);
+  --background-message-hover: transparent;
+  --background-modifier-hover: var(--clr01);
+  --background-modifier-active: var(--clr01);
+  --background-modifier-selected: var(--clr01);
+  --deprecated-card-bg: var(--clr01);
+  --background-floating: var(--clr18);
+  --deprecated-quickswitcher-input-background: var(--clr17);
+  --elevation-low: none;
+  --scrollbar-auto-thumb: var(--clr19);
+  --scrollbar-auto-track: var(--clr19);
+  --scrollbar-thin-thumb: var(--clr19);
+  --activity-card-background: var(--clr19);
+  --border-color: var(--clr19);
+  --popout-title: var(--clr18);
+  --popout-background-main: var(--clr18);
+  --jump-newmessage-bars-buttons: var(--clr19);
+  --jump-newmessage-bars: var(--clr19);
+  --Emoji-Menu: var(--clr18);
 }
 
 @keyframes radc {
@@ -188,37 +218,7 @@ body,
   border-image: var(--grd02) 1;
 }
 
-.theme-dark {
-  --background-tertiary: var(--clr18);
-  --background-secondary: var(--clr19);
-  --background-secondary-alt: var(--clr19);
-  --background-primary: var(--clr18);
-  --background-mobile-primary: var(--clr01);
-  --background-mobile-secondary: var(--clr01);
-  --channeltextarea-background: var(--clr19); /* Main window text bar + reply bar background */
-  --background-accent: var(--clr02);
-  --divider-color: var(--clr02);
-  --background-message-hover: transparent;
-  --background-modifier-hover: var(--clr01);
-  --background-modifier-active: var(--clr01);
-  --background-modifier-selected: var(--clr01);
-  --deprecated-card-bg: var(--clr01);
-  --background-floating: var(--clr18);
-  --deprecated-quickswitcher-input-background: var(--clr17);
-  --elevation-low: none;
-  --scrollbar-auto-thumb: var(--clr19);
-  --scrollbar-auto-track: var(--clr19);
-  --scrollbar-thin-thumb: var(--clr19);
-  --activity-card-background: var(--clr19);
-  --border-color: var(--clr19);
-  --popout-title: var(--clr18);
-  --popout-background-main: var(--clr18);
-  --jump-newmessage-bars-buttons: var(--clr19);
-  --jump-newmessage-bars: var(--clr19);
-  --Emoji-Menu: var(--clr18);
-}
-
-/* settings Icon fixes for Armcord */
+/* Setting Icon fixes for Armcord */
 .themed-qqoYp3.item-2GWPIy#themes::before {
   -webkit-mask: var(--settingsicons-armthemes) center/contain no-repeat;
   mask: var(--settingsicons-armthemes) center/contain no-repeat;
@@ -276,6 +276,8 @@ body,
 div#themes:after, div#armcord:after {
   margin-left: 0.5em;
 }
+
+/* Additional Setting changes*/
 :root .sidebarRegion-1VBisG::before {
   color: var(--clr02);
 }
@@ -294,14 +296,12 @@ border-radius: 0.7em;
 |          TitleBar           |
 ===============================
 */
-
 .withFrame-haYltI {
   height: 20px !important;
   background-color: var(--clr02);
   animation: bkcc 18s infinite;
   background-image: var(--grd01);
 }
-
 [armcord-platform="linux"] .window-title, [armcord-platform="win32"] .window-title {
   content: var(--wordmark-svg);
   height: 10px;
@@ -311,7 +311,6 @@ border-radius: 0.7em;
   line-height: 20px;
   padding: 0;
 }
-
 [armcord-platform="win32"] .titlebar #window-controls-container {
   float: right;
   width: 150px;
@@ -319,7 +318,6 @@ border-radius: 0.7em;
   line-height: 15px;
   -webkit-app-region: no-drag;
 }
-
 .titlebar {
   display: block;
   top: 0.25%;
@@ -345,10 +343,24 @@ border-radius: 0.7em;
 
 /*                              
 ===============================
+|          ServerLS           |
+===============================
+*/
+.svg-2ifYOU, .wrapperSimple-2SFl9K, .wrapper-3Un6-K {
+  border-radius: 35% 50% 35% 10%;
+  animation: radc 6s infinite reverse;
+}
+.baseShapeRound-3epLEv, .actionButton-3-B2x- {
+  
+  border-radius: 35% 50% 35% 10%;
+  animation: radc 6s infinite;
+}
+
+/*                              
+===============================
 |          MemberLS           |
 ===============================
 */
-
 #vc-membercount {
   padding-bottom: 0.5em;
   z-index: 103;
@@ -399,7 +411,6 @@ border-radius: 0.7em;
 |          SideBar            |
 ===============================
 */
-
 .sidebar-1tnWFu {
   border-right: 1px solid transparent;
   border-image: var(--grd02) 1;
@@ -446,17 +457,13 @@ background-color: var(--clr18);
 .sidebar-1tnWFu .wrapper-NhbLHG.modeConnected-NrO4cP .content-1gYQeQ .channelName-3KPsGw {
   color: var(--clr14);
 }
-
 .modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg, 
 .modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV {
   color: var(--clr06);
 }
-
-/*
+/* Other Channel lists = ToDo add hover effects and more
 .modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, 
-
 .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV */
-
 .button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX {
   background-color: var(--clr07) !important;
   border-radius: 0.5em !important;
@@ -505,20 +512,4 @@ button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.co
 }
 .content-3spvdd {
   color: var(--clr16);
-}
-
-/*                              
-===============================
-|          ServerLS           |
-===============================
-*/
-
-.svg-2ifYOU, .wrapperSimple-2SFl9K, .wrapper-3Un6-K {
-  border-radius: 35% 50% 35% 10%;
-  animation: radc 6s infinite reverse;
-}
-.baseShapeRound-3epLEv, .actionButton-3-B2x- {
-  
-  border-radius: 35% 50% 35% 10%;
-  animation: radc 6s infinite;
 }
