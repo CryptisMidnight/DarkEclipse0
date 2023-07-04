@@ -58,6 +58,7 @@ Author  = CryptisMidnight
   --grd02: linear-gradient(180deg, var(--clr18) 15%, var(--clr02) 50%, var(--clr04) 85%);
   --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
   --grd04: linear-gradient(90deg, var(--clr01) 15%, var(--clr03), var(--clr07), transparent 85%);
+  --grd05: linear-gradient(90deg, var(--clr20) 10%, transparent, var(--clr20) 90%), linear-gradient(0deg, var(--clr18) 10%, transparent 50%, var(--clr18) 90%);
   
 
     
@@ -178,6 +179,11 @@ body,
   background-position: center !important;
   background-size: cover !important;
 }
+.none-1rXy4P.scrollerBase-1Pkza4 {
+  background-color: transparent;
+  border-left: 1px solid transparent;
+  border-image: var(--grd02) 1;
+}
 
 .theme-dark {
   --background-tertiary: var(--clr18);
@@ -289,7 +295,7 @@ border-radius: 0.7em;
 .withFrame-haYltI {
   height: 20px !important;
   background-color: var(--clr02);
-  animation: bkcc 20s infinite;
+  animation: bkcc 18s infinite;
   background-image: var(--grd01);
 }
 
@@ -347,7 +353,6 @@ border-radius: 0.7em;
   margin-top: 25px;
 }
 :root .membersWrap-3NUR2t::before {
-  content: "Member list";
   margin-top: 0.25em;
   height: 0.75em;
   font-size: 1.15em;
@@ -363,7 +368,6 @@ border-radius: 0.7em;
   border-left: 1px solid transparent;
   border-image: var(--grd02) 1;
 }
-
 .membersGroup-2eiWxl {
   background-color: var(--clr18);
   background-image: var(--grd03);
@@ -373,6 +377,15 @@ border-radius: 0.7em;
 }
 .membersWrap-3NUR2t {
   height: 100%;
+}
+:is([class*="userProfile"], [class*="userPopout"]) [class*="bannerPremium"] {
+  background-image: var(--grd05) !important;
+}
+.popoutBanner-3cqRD9 {
+  background-image: var(--grd05);
+}
+.banner-1YaD3N {
+  border-radius: 0em 0.5em 0em 0em;
 }
 
 /*                              
