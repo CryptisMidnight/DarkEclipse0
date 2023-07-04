@@ -339,6 +339,9 @@ border-radius: 0.7em;
   position: fixed;
   z-index: 99999;
 }
+[customTitlebar] .base-2jDfDU {
+  border-top-left-radius: 0;
+}
 
 /*                              
 ===============================
