@@ -64,6 +64,7 @@ Author  = CryptisMidnight
   --Titlebar: flex; /* flex = ON, none = OFF */
   --bgd-img: url('https://i.pinimg.com/originals/88/d7/9e/88d79ecf8069585d6e1b95a5805098df.jpg');  /* Background image also try https://cdn.wallpapersafari.com/29/54/DScYIg.jpg*/
   --Home-Image-Icon: url('https://raw.githubusercontent.com/CryptisMidnight/GoSh-Night/main/images/webp/zombie_discord.webp'); /* the DM discord Icon */
+  --codeblockbackground: url(https://lyght1337.github.io/DarknessCodeBlocks/Codeblocksvg/code.svg);
 
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
@@ -447,7 +448,6 @@ background-color: var(--clr18);
 |           Center            |
 ===============================
 */
-
 .form-3gdLxP {
   padding-left: 0.55em;
   padding-right: 0.7em;
@@ -471,6 +471,12 @@ button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.co
   justify-content: center;
   align-items: center;
   height: auto;
+}
+.hljs.scrollbar-3vVt8d {
+  border-radius: var(--server-radius);
+}
+.hljs::before {
+  background-color: var(--clr04);
 }
 
 /*                              
