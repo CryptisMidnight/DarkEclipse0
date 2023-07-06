@@ -70,7 +70,10 @@ Author  = CryptisMidnight
   --brand-experiment-560: var(--clr04); /* default hover color */
   --button-danger-background: var(--clr02);
   --button-danger-background-hover: var(--clr06);
-  
+  --button-outline-danger-border: var(--clr02);
+  --button-outline-danger-background-hover: var(--clr06);
+  --button-outline-danger-border-hover: var(--clr06);
+
 
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
