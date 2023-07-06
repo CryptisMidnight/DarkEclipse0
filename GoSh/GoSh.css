@@ -76,14 +76,14 @@ Author  = CryptisMidnight
 
 
   /* Radial Status (modifiable!) */
-  --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  --rs-medium-spacing: 1px; /* Gap between avatar and status for User popout | MUST end in px */
-  --rs-large-spacing: 1px; /* Gap between avatar and status for User profiles | MUST end in px */
-  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-  --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
-  --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
-  --rs-avatar-shape: 35%; /* 50% for round - 0% for square */ 
-  --avatar-radius: 35%; /* 50% for round - 0% for square */
+  --rs-small-spacing: 0.1em; /* Gap between avatar and status for members list/dms */
+  --rs-medium-spacing: 0.1em; /* Gap between avatar and status for User popout */
+  --rs-large-spacing: 0.1em; /* Gap between avatar and status for User profiles */
+  --rs-small-width: 0.15em; /* Thickness of status border for members list/dms */
+  --rs-medium-width: 0.2em; /* Thickness of status border for User popout */
+  --rs-large-width: 0.2em; /* Thickness of status border for User profile */
+  --rs-avatar-shape: 30%; /* 50% for round - 0% for square */ 
+  --avatar-radius: 30%; /* 50% for round - 0% for square */
   --rs-online-color: var(--clr03); /* Colour for online status */
   --rs-idle-color: var(--clr12); /* Colour for idle status */
   --rs-dnd-color: var(--clr02); /* Colour for dnd status */
@@ -94,9 +94,9 @@ Author  = CryptisMidnight
   --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
   /* Server List adjustment*/
   --server-radius: 1.1em;
-  --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
-  --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
-  --server-container: calc(var(--server-size) + 20px);
+  --server-size: var(--HSL-server-icon-size, var(--HSL-size, 2.5em));
+  --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 0.5em));
+  --server-container: calc(var(--server-size) + 1em);
   --server-direction: var(--HSL-server-direction, column);
   --server-alignment: var(--HSL-server-alignment, flex-start);
   /* Menu icons in settings*/
@@ -221,7 +221,7 @@ body,
 }
 .profilePanel-2PWEok .userPanelInnerThemed-2xZFjl, .userPanelInnerThemed-3YO1BB {
   background: transparent;
-  border-left: 1px solid transparent;
+  border-left: 0.1em solid transparent;
   border-image: var(--grd02) 1;
 }
 
@@ -300,11 +300,11 @@ border-radius: 0.7em;
 .lookFilled-1H2Jvj.colorBrand-2M3O3N {
   animation: bkcc 18s infinite;
   background-image: var(--grd01);
-  border: 1px solid var(--clr02);
+  border: 0.1em solid var(--clr02);
 }
 .lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
   background-color: var(--clr18);
-  border: 1px solid var(--clr02);
+  border: 0.1em solid var(--clr02);
   animation: bdrc 20s infinite;
 }
 .removeButton-v6eolJ {
@@ -317,45 +317,22 @@ border-radius: 0.7em;
 ===============================
 */
 .withFrame-haYltI {
-  height: 20px !important;
+  height: 1.25em !important;
   background-color: var(--clr02);
   animation: bkcc 18s infinite;
   background-image: var(--grd01);
 }
 [armcord-platform="linux"] .window-title, [armcord-platform="win32"] .window-title {
   content: var(--wordmark-svg);
-  height: 10px;
-  margin-left: initial;
-  transform: translate(10px, 2.5px);
-  float: left;
-  line-height: 20px;
-  padding: 0;
+  height: 0.7em;
+  transform: translate(0.5em, 0.15em);
 }
 [armcord-platform="win32"] .titlebar #window-controls-container {
   float: right;
-  width: 150px;
+  width: 6em;
   height: 100%;
-  line-height: 15px;
+  line-height: 1.25em;
   -webkit-app-region: no-drag;
-}
-.titlebar {
-  display: block;
-  top: 0.25%;
-  left: 0;
-  right: 0;
-  flex-shrink: 0;
-  overflow: hidden;
-  zoom: 1;
-  box-sizing: border-box;
-  width: 100%;
-  clear: both;
-  height: 20px;
-  line-height: 15px;
-  -webkit-app-region: drag;
-  user-select: none;
-  -webkit-user-select: none;
-  position: fixed;
-  z-index: 99999;
 }
 [customTitlebar] .base-2jDfDU {
   border-top-left-radius: 0 !important;
@@ -374,7 +351,6 @@ border-radius: 0.7em;
   animation: radc 6s infinite reverse;
 }
 .baseShapeRound-3epLEv, .actionButton-3-B2x- {
-  
   border-radius: 35% 50% 35% 10%;
   animation: radc 6s infinite;
 }
@@ -391,7 +367,7 @@ border-radius: 0.7em;
   top: -0.75em;
 }
 .members-3WRCEx {
-  margin-top: 25px;
+  margin-top: 1.5em;
 }
 :root .membersWrap-3NUR2t::before {
   margin-top: 0.25em;
@@ -406,14 +382,14 @@ border-radius: 0.7em;
   border-radius: 0 0 var(--rs-avatar-shape) var(--rs-avatar-shape);
 }
 .container-2o3qEW {
-  border-left: 1px solid transparent;
+  border-left: 0.1em solid transparent;
   border-image: var(--grd02) 1;
 }
 .membersGroup-2eiWxl {
   background-color: var(--clr18);
   background-image: var(--grd03);
-  border-top: 1px solid;
-  /* border-bottom: 1px solid; */
+  border-top: 0.1em solid;
+  /* border-bottom: 0.1em solid; */
   border-image: var(--grd04) 1;
 }
 .membersWrap-3NUR2t {
@@ -435,11 +411,11 @@ border-radius: 0.7em;
 ===============================
 */
 .sidebar-1tnWFu {
-  border-right: 1px solid transparent;
+  border-right: 0.1em solid transparent;
   border-image: var(--grd02) 1;
 }
 .scroller-1ox3I2 {
-border-right: 0px solid transparent;
+border-right: 0em solid transparent;
 background-color: var(--clr18);
 }
 .containerDefault-3TQ5YN, 
@@ -448,8 +424,8 @@ background-color: var(--clr18);
 .containerUserOver-3woq86 {
   background-color: var(--clr18);
   background-image: var(--grd03);
-  border-top: 1px solid;
-  /* border-bottom: 1px solid; */
+  border-top: 0.1em solid;
+  /* border-bottom: 0.1em solid; */
   border-image: var(--grd04) 1;
 }
 .primaryInfo-2ocY3v {
@@ -490,10 +466,12 @@ background-color: var(--clr18);
 .button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX {
   background-color: var(--clr07) !important;
   border-radius: 0.5em !important;
+  border: 0.1em solid var(--clr11);
 }
 .button-1EGGcP.buttonColor-3bP3fX:hover, .button-1EGGcP .buttonColor-3bP3fX:hover {
   background-color: var(--clr11) !important;
   border-radius: 0.5em !important;
+  border: 0.15em solid var(--clr07);
 }
 
 /*                              
@@ -507,9 +485,9 @@ background-color: var(--clr18);
 }
 .base-2jDfDU .channelTextArea-220_Gz, .base-2jDfDU .channelTextArea-1FufC0, .base-2jDfDU .scrollableContainer-15eg7h {
   background-color: var(--clr19);
-  border: 1px solid var(--clr02);
+  border: 0.1em solid var(--clr02);
   animation: bdrc 20s infinite;
-  border-radius: 10px;
+  border-radius: 1em;
 }
 button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.colorBrand-2M3O3N.grow-2T4nbg {
   position: relative;
