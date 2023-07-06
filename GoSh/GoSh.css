@@ -66,6 +66,11 @@ Author  = CryptisMidnight
     /* Misc */
   --codeblockbackground: url(https://lyght1337.github.io/DarknessCodeBlocks/Codeblocksvg/code.svg);
   --Titlebar: flex; /* flex = ON, none = OFF */
+  --brand-experiment: var(--clr02); /* Most often the button color*/
+  --brand-experiment-560: var(--clr04); /* default hover color */
+  --button-danger-background: var(--clr02);
+  --button-danger-background-hover: var(--clr06);
+  
 
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 1px; /* Gap between avatar and status for members list/dms | MUST end in px */
@@ -174,7 +179,6 @@ body,
 #app-mount .privateChannels-oVe7HL, 
 #app-mount .panels-3wFtMD > *, 
 #app-mount .chat-2ZfjoI, 
-#app-mount .container-3XgAHv, 
 #app-mount .wrapper-3HVHpV, 
 #app-mount .noChat-sb1z07, 
 #app-mount .members-3WRCEx, 
@@ -277,7 +281,7 @@ div#themes:after, div#armcord:after {
   margin-left: 0.5em;
 }
 
-/* Additional Setting changes*/
+/* Additional Setting changes and Extras */
 :root .sidebarRegion-1VBisG::before {
   color: var(--clr02);
 }
@@ -289,6 +293,19 @@ div#themes:after, div#armcord:after {
 .theme-dark .closeButton-PCZcma {
 border-color: var(--clr17);
 border-radius: 0.7em;
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+  animation: bkcc 18s infinite;
+  background-image: var(--grd01);
+  border: 1px solid var(--clr02);
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
+  background-color: var(--clr18);
+  border: 1px solid var(--clr02);
+  animation: bdrc 20s infinite;
+}
+.removeButton-v6eolJ {
+  background-color: var(--clr02) !important;
 }
 
 /*                              
@@ -471,6 +488,10 @@ background-color: var(--clr18);
   background-color: var(--clr07) !important;
   border-radius: 0.5em !important;
 }
+.button-1EGGcP.buttonColor-3bP3fX:hover, .button-1EGGcP .buttonColor-3bP3fX:hover {
+  background-color: var(--clr11) !important;
+  border-radius: 0.5em !important;
+}
 
 /*                              
 ===============================
@@ -520,3 +541,11 @@ button.attachButton-_ACFSu.attachButton-1ijpt9.button-ejjZWC.lookBlank-FgPMy6.co
   border-radius: 0 1em 1em 0;
 }
 
+/*                              
+===============================
+|           Threads           |
+===============================
+*/
+#app-mount .container-3XgAHv  {
+  border-radius: 0em !important;
+}
