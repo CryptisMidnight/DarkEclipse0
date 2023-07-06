@@ -63,6 +63,7 @@ Author  = CryptisMidnight
   --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
   --grd04: linear-gradient(90deg, var(--clr01) 15%, var(--clr03), var(--clr07), transparent 85%);
   --grd05: linear-gradient(90deg, var(--clr20) 10%, transparent, var(--clr20) 90%), linear-gradient(0deg, var(--clr18) 10%, transparent 50%, var(--clr18) 90%);
+  --grd06: linear-gradient(90deg, var(--clr03), var(--clr11),var(--clr07), var(--clr15));
     /* Misc */
   --codeblockbackground: url(https://lyght1337.github.io/DarknessCodeBlocks/Codeblocksvg/code.svg);
   --Titlebar: flex; /* flex = ON, none = OFF */
@@ -73,6 +74,7 @@ Author  = CryptisMidnight
   --button-outline-danger-border: var(--clr02);
   --button-outline-danger-background-hover: var(--clr06);
   --button-outline-danger-border-hover: var(--clr06);
+  --text-positive: var(var(--clr03));
 
 
   /* Radial Status (modifiable!) */
@@ -315,6 +317,12 @@ border-radius: 0.7em;
   align-content: center;
   justify-content: start;
 }
+#app-mount .wrapper-3Un6-K foreignObject[mask*=mobile][width="32"] img {
+    width: calc(100% - 0px);
+}
+#app-mount .wrapper-3Un6-K foreignObject[mask*=mobile][width="80"] img {
+  width: calc(100% - 0px);
+}
 
 /*                              
 ===============================
@@ -468,6 +476,20 @@ background-color: var(--clr18);
 /* Other Channel lists = ToDo add hover effects and more
 .modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, 
 .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV */
+.rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc {
+  color: var(--clr03);
+}
+.contents-3NembX {
+  background-color: black;
+  background-image: var(--grd06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+[aria-label="Disconnect"] {
+  color: var(--clr02);
+}
 .button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX {
   background-color: var(--clr07) !important;
   border-radius: 0.5em !important;
