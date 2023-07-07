@@ -63,7 +63,7 @@ Author  = CryptisMidnight
   --grd03: linear-gradient(0deg, var(--clr09), var(--clr18), transparent);
   --grd04: linear-gradient(90deg, var(--clr01) 15%, var(--clr03), var(--clr07), transparent 85%);
   --grd05: linear-gradient(90deg, var(--clr20) 10%, transparent, var(--clr20) 90%), linear-gradient(0deg, var(--clr18) 10%, transparent 50%, var(--clr18) 90%);
-  --grd06: linear-gradient(90deg, var(--clr03), var(--clr11),var(--clr07), var(--clr15));
+  --grd06: linear-gradient(90deg, var(--clr03), var(--clr11) 50%,var(--clr07), var(--clr15));
     /* Misc */
   --codeblockbackground: url(https://lyght1337.github.io/DarknessCodeBlocks/Codeblocksvg/code.svg);
   --Titlebar: flex; /* flex = ON, none = OFF */
