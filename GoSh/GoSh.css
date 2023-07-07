@@ -479,13 +479,11 @@ background-color: var(--clr18);
 .rtcConnectionQualityFine-3zZrSa .pingForeground-1BRBTc {
   color: var(--clr03);
 }
-.contents-3NembX {
-  background-color: black;
+.rtcConnectionStatusConnected-1c73OK {
   background-image: var(--grd06) !important;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900;
 }
 [aria-label="Disconnect"] {
   color: var(--clr02);
