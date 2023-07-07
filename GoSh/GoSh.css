@@ -481,7 +481,7 @@ background-color: var(--clr18);
 }
 .contents-3NembX {
   background-color: black;
-  background-image: var(--grd06);
+  background-image: var(--grd06) !important;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
