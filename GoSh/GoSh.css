@@ -323,6 +323,12 @@ border-radius: 0.7em;
 #app-mount .wrapper-3Un6-K foreignObject[mask*=mobile][width="80"] img {
   width: calc(100% - 0px);
 }
+.settingsBanner-1eDJ5w {
+  background-image: var(--grd05);
+}
+foreignObject {
+  mask: inherit;
+}
 
 /*                              
 ===============================
@@ -417,6 +423,7 @@ border-radius: 0.7em;
 .banner-1YaD3N {
   border-radius: 0em 0.5em 0em 0em;
 }
+
 
 /*                              
 ===============================
