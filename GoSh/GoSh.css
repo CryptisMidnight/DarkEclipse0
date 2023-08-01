@@ -75,7 +75,7 @@ Author  = CryptisMidnight
   --button-outline-danger-background-hover: var(--clr06);
   --button-outline-danger-border-hover: var(--clr06);
   --text-positive: var(var(--clr03));
-
+  --Emoji-Menu-Height: 35em;
 
   /* Radial Status (modifiable!) */
   --rs-small-spacing: 0.1em; /* Gap between avatar and status for members list/dms */
